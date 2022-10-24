@@ -1,3 +1,9 @@
+import {
+  TwitterLogoIcon,
+  LinkedInLogoIcon,
+  InstagramLogoIcon,
+} from "@radix-ui/react-icons";
+
 export default function Home() {
   return (
     <div className="header h-20 bg-[#1F1F1F] flex items-center md:justify-between">

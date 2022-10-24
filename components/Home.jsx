@@ -5,9 +5,6 @@ import {
   ArrowUpIcon,
   ArrowDownIcon,
   ArrowRightIcon,
-  TwitterLogoIcon,
-  LinkedInLogoIcon,
-  InstagramLogoIcon,
 } from "@radix-ui/react-icons";
 
 export default function Home() {
