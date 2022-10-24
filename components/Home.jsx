@@ -77,7 +77,24 @@ export default function Home() {
           />
         </div>
       </div>
-      <footer className="flex justify-center items-center text-white text-xl h-20 bg-[#1F1F1F]">
+      <div className="bg-[#1F1F1F] h-96 flex flex-row justify-around">
+        <p className="text-white flex items-center max-w-2xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+          deleniti ea. Sed, minima nisi blanditiis doloribus consequuntur nulla.
+          Inventore aperiam tempore recusandae ducimus quis voluptas deserunt
+          quibusdam animi rem saepe ullam ipsum quae enim, soluta fugiat alias
+          laudantium odit unde voluptatum in autem repellat, laborum quidem
+          eius. Optio voluptates odit, est maiores incidunt magni quasi a dolore
+          blanditiis delectus, deleniti ea vel eveniet aliquid recusandae
+          quisquam quidem saepe pariatur fuga, asperiores repellendus?
+          Cupiditate blanditiis, ad minus error sit possimus nemo ullam pariatur
+          commodi, temporibus esse dolorum rem at odio mollitia tempore fugit
+          provident explicabo. Rem commodi nihil nostrum ut voluptates.
+        </p>
+      </div>
+      <div className="bg-[#EEF1EF] h-32 flex flex-row justify-around"></div>
+
+      <footer className="flex justify-center items-center text-white text-xl h-64 bg-[#1F1F1F]">
         footer footer footer footer
       </footer>
     </>
