@@ -4,7 +4,7 @@ import {
   InstagramLogoIcon,
 } from "@radix-ui/react-icons";
 
-export default function Home() {
+export default function Navbar() {
   return (
     <div className="header h-20 bg-[#1F1F1F] flex items-center md:justify-between">
       <h1 className="text-white text-2xl md:text-4xl ml-10">Gig.events</h1>
