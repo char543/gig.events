@@ -78,7 +78,7 @@ export default function Home() {
         </div>
       </div>
       <footer className="flex justify-center items-center text-white text-xl h-20 bg-[#1F1F1F]">
-        footer footer footer
+        footer footer footer footer
       </footer>
     </>
   );
