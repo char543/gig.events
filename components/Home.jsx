@@ -12,8 +12,8 @@ import {
 export default function Home() {
   return (
     <>
-      <div className="header h-20 bg-[#1F1F1F] flex items-center justify-between">
-        <h1 className="text-white text-4xl ml-10 justify-start">Gig.events</h1>
+      <div className="header h-20 bg-[#1F1F1F] flex items-center md:justify-between">
+        <h1 className="text-white text-2xl md:text-4xl ml-10">Gig.events</h1>
         <div className="text-white">
           <a href="/" className="m-4">
             Home
@@ -34,8 +34,8 @@ export default function Home() {
           <TwitterLogoIcon className="m-2 w-5 h-5" />
         </div>
       </div>
-      <div className="bg-[#EEF1EF] h-96 flex flex-row justify-around">
-        <div className="sectionContent w-64 flex items-center">
+      <div className="bg-[#EEF1EF] flex flex-col justify-center items-center md:h-96 md:flex-row md:justify-around">
+        <div className="sectionContent w-64 flex items-center m-4 mb-2 md:m-0">
           <Image
             src="/club1.jpg"
             alt="club1"
@@ -44,7 +44,7 @@ export default function Home() {
             className="rounded-md"
           />
         </div>
-        <div className="sectionContent w-64 flex items-center">
+        <div className="sectionContent w-64 flex items-center m-4 mt-2 md:m-0">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
             tenetur natus, explicabo saepe, ratione quisquam nostrum similique
@@ -55,8 +55,8 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="bg-[#1F1F1F] h-96 flex flex-row justify-around">
-        <div className="sectionContent w-64 flex items-center">
+      <div className="bg-[#1F1F1F] flex flex-col justify-center items-center md:h-96 md:flex-row md:justify-around">
+        <div className="sectionContent w-64 flex items-center m-4 mb-2 md:m-0">
           <p className="text-white">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
             delectus voluptates soluta impedit atque magnam temporibus ut
@@ -66,7 +66,7 @@ export default function Home() {
             dolore sapiente praesentium porro provident!
           </p>
         </div>
-        <div className="sectionContent w-64 flex items-center">
+        <div className="sectionContent w-64 flex items-center m-4 mt-2 md:m-0">
           <Image
             src="/club2.jpg"
             alt="club2"
@@ -76,8 +76,8 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="bg-[#EEF1EF] h-96 flex flex-row justify-around">
-        <div className="sectionContent w-64 flex items-center">
+      <div className="bg-[#EEF1EF] flex flex-col justify-center items-center md:h-96 md:flex-row md:justify-around">
+        <div className="sectionContent w-64 flex items-center m-4 mb-2 md:m-0">
           <Image
             src="/club3.jpg"
             alt="club3"
@@ -86,7 +86,7 @@ export default function Home() {
             className="rounded-md"
           />
         </div>
-        <div className="sectionContent w-64 flex items-center">
+        <div className="sectionContent w-64 flex items-center mx-4 my-2 md:m-0">
           <Image
             src="https://source.unsplash.com/random"
             alt="random"
@@ -95,7 +95,7 @@ export default function Home() {
             className="rounded-md"
           />
         </div>
-        <div className="sectionContent w-64 flex items-center">
+        <div className="sectionContent w-64 flex items-center m-4 mt-2 md:m-0">
           <Image
             src="https://source.unsplash.com/random"
             alt="random"
@@ -105,8 +105,8 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="bg-[#1F1F1F] h-96 flex flex-row justify-around">
-        <p className="text-white flex items-center max-w-2xl">
+      <div className="bg-[#1F1F1F] flex justify-center items-center md:h-96 md:justify-around">
+        <p className="text-white flex items-center max-w-2xl m-10 md:m-0">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
           deleniti ea. Sed, minima nisi blanditiis doloribus consequuntur nulla.
           Inventore aperiam tempore recusandae ducimus quis voluptas deserunt
