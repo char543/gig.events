@@ -1,10 +1,38 @@
 import Image from "next/image";
+import {
+  ArrowLeftIcon,
+  ArrowUpIcon,
+  ArrowDownIcon,
+  ArrowRightIcon,
+  TwitterLogoIcon,
+  LinkedInLogoIcon,
+  InstagramLogoIcon,
+} from "@radix-ui/react-icons";
 
 export default function Home() {
   return (
     <>
-      <div className="header h-20 bg-[#1F1F1F] flex justify-between items-center">
-        <h1 className="text-white text-4xl mx-10">Gig.events</h1>
+      <div className="header h-20 bg-[#1F1F1F] flex items-center justify-between">
+        <h1 className="text-white text-4xl ml-10 justify-start">Gig.events</h1>
+        <div className="text-white">
+          <a href="/" className="m-4">
+            Home
+          </a>
+          <a href="/" className="m-4">
+            About
+          </a>
+          <a href="/" className="m-4">
+            Services
+          </a>
+          <a href="/" className="m-4">
+            Contact
+          </a>
+        </div>
+        <div className="text-white flex flex-row mr-10">
+          <LinkedInLogoIcon className="m-2 w-5 h-5" />
+          <InstagramLogoIcon className="m-2 w-5 h-5" />
+          <TwitterLogoIcon className="m-2 w-5 h-5" />
+        </div>
       </div>
       <div className="bg-[#EEF1EF] h-96 flex flex-row justify-around">
         <div className="sectionContent w-64 flex items-center">
@@ -92,10 +120,20 @@ export default function Home() {
           provident explicabo. Rem commodi nihil nostrum ut voluptates.
         </p>
       </div>
-      <div className="bg-[#EEF1EF] h-32 flex flex-row justify-around"></div>
-
-      <footer className="flex justify-center items-center text-white text-xl h-64 bg-[#1F1F1F]">
-        footer footer footer footer
+      <div className="bg-[#EEF1EF] h-32 flex flex-row justify-around items-center">
+        <ArrowLeftIcon className="m-2 w-10 h-10" />
+        <ArrowUpIcon className="m-2 w-10 h-10" />
+        <ArrowDownIcon className="m-2 w-10 h-10" />
+        <ArrowRightIcon className="m-2 w-10 h-10" />
+      </div>
+      <footer className="flex flex-col justify-center items-center text-white text-xl h-64 bg-[#1F1F1F]">
+        <p>footer footer footer footer</p>
+        <div className="flex mt-12">
+          <ArrowLeftIcon className="m-2" />
+          <ArrowUpIcon className="m-2" />
+          <ArrowDownIcon className="m-2" />
+          <ArrowRightIcon className="m-2" />
+        </div>
       </footer>
     </>
   );
