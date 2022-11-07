@@ -8,17 +8,32 @@ module.exports = {
 		extend: {
 			keyframes: {
 				fadeDown: {
-					"0%": { transform: "translateY(-10vh)" },
-					"100%": { transform: "translateY(0vh)" },
+					"0%": {
+						transform: "translate3d(0, -10vh, 0)",
+						opacity: "0",
+					},
+					"50%": {
+						transform: "translate3d(0, 2vh, 0)",
+					},
+					"100%": {
+						transform: "translate3d(0, 0vh, 0)",
+						opacity: "1",
+					},
 				},
 				fadeLeft: {
-					"0%": { transform: "translateX(-20vw)" },
-					"100%": { transform: "translateX(0vw)" },
+					"0%": {
+						transform: "translate3d(-5vw, 0, 0)",
+						opacity: "0.3",
+					},
+					"100%": {
+						transform: "translate3d(0vw, 0, 0)",
+						opacity: "1",
+					},
 				},
 			},
 			animation: {
-				down: "fadeDown 0.8s ease-in-out",
-				left: "fadeLeft 0.5s ease-in-out",
+				down: "fadeDown 1s ease-in-out",
+				left: "fadeLeft 1s ease-in-out",
 			},
 		},
 	},

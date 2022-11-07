@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
 	background-color: #16161d;
-}
+} */
 
 .gradient-wrapper-left {
 	background: linear-gradient(90deg, #16161d 0%, rgba(0, 0, 0, 0) 100%);

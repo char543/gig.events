@@ -12,12 +12,12 @@ export default function Home() {
 		<>
 			<Navbar />
 			<div className="bg-[#16161d] bg-[url('../public/mixer-dark.jpg')] relative -z-10 bg-cover bg-fixed flex flex-col justify-center items-center md:h-[100vh] md:flex-row md:justify-around">
-				<div className="gradient-wrapper-left"></div>
+				<div className="gradient-wrapper-left" />
 				<div className="sectionContent w-64 flex flex-col items-start m-4 mt-2 md:m-0">
-					<h1 className="text-white text-3xl my-10 animate-down">
+					<h1 className="text-white text-3xl my-10 animate-down transform-gpu">
 						Text Here
 					</h1>
-					<p className="text-white animate-left">
+					<p className="text-white animate-left transform-gpu">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Inventore tenetur natus, explicabo saepe, ratione
 						quisquam nostrum similique perferendis reiciendis
@@ -28,28 +28,12 @@ export default function Home() {
 						laboriosam illo?
 					</p>
 				</div>
-				<div className="sectionContent w-64 flex items-center m-4 mb-2 md:m-0">
-					{/* <Image
-            src="/club1.jpg"
-            alt="club1"
-            width="250px"
-            height="250px"
-            className="rounded-md"
-          /> */}
-				</div>
+				<div className="sectionContent w-64 flex items-center m-4 mb-2 md:m-0" />
 			</div>
 			<div className="bg-[#eef1ef] bg-[url('../public/speaker.jpg')] relative -z-10 bg-left bg-cover bg-no-repeat bg-fixed flex flex-col justify-center items-center md:h-[80vh] md:flex-row md:justify-around">
 				<div className="bg-[#EEF1EF] gradient-wrapper-right" />
-				<div className="sectionContent w-64 flex items-center m-4 mt-2 md:m-0">
-					{/* <Image
-            src="/club2.jpg"
-            alt="club2"
-            width="250px"
-            height="250px"
-            className="rounded-md"
-          /> */}
-				</div>
-				<div className="sectionContent w-64 flex flex-col items-start m-4 mb-2 md:m-0">
+				<div className="sectionContent w-64 flex items-center m-4 mt-2 md:m-0" />
+				<div className="sectionContent w-64 flex flex-col items-start m-4 mb-8 md:m-0">
 					<h1 className="text-3xl my-10">Text Here</h1>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -77,28 +61,12 @@ export default function Home() {
 						laboriosam illo??
 					</p>
 				</div>
-				<div className="sectionContent w-64 flex items-center m-4 mb-2 md:m-0">
-					{/* <Image
-            src="/club1.jpg"
-            alt="club1"
-            width="250px"
-            height="250px"
-            className="rounded-md"
-          /> */}
-				</div>
+				<div className="sectionContent w-64 flex items-center m-4 mb-2 md:m-0" />
 			</div>
 			<div className="bg-[url('../public/f1.jpg')] relative -z-10 bg-left bg-contain bg-no-repeat bg-fixed flex flex-col justify-center items-center md:h-[80vh] md:flex-row md:justify-around">
 				<div className="bg-[#EEF1EF] gradient-wrapper-right" />
-				<div className="sectionContent w-64 flex items-center m-4 mt-2 md:m-0">
-					{/* <Image
-            src="/club2.jpg"
-            alt="club2"
-            width="250px"
-            height="250px"
-            className="rounded-md"
-          /> */}
-				</div>
-				<div className="sectionContent w-64 flex flex-col items-start m-4 mb-2 md:m-0">
+				<div className="sectionContent w-64 flex items-center m-4 mt-2 md:m-0" />
+				<div className="sectionContent w-64 flex flex-col items-start m-4 mb-8 md:m-0">
 					<h1 className="text-3xl my-10">Text Here</h1>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -154,7 +122,7 @@ export default function Home() {
 			>
 				<div className="absolute bg-[#EEF1EF] gradient-wrapper-right-2" />
 				<h1 className="text-3xl my-10">Title Here</h1>
-				<p className="flex items-center max-w-2xl m-10 md:m-0">
+				<p className="flex items-center max-w-2xl m-16 md:m-0">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
 					Commodi, deleniti ea. Sed, minima nisi blanditiis doloribus
 					consequuntur nulla. Inventore aperiam tempore recusandae
