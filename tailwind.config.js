@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
-        fadeDown: {
+        bounceDown: {
           "from 60%,75%,90%,to": {
             "-webkit-animation-timing-function":
               "cubic-bezier(.215,.61,.355,1)",
@@ -81,12 +81,26 @@ module.exports = {
             transform: "translate3d(0,0,0)",
           },
         },
+        fadeDown: {
+          from: {
+            opacity: 0,
+            "-webkit-transform": "translate3d(0,-100%,0)",
+            transform: "translate3d(0,-100%,0)",
+          },
+
+          to: {
+            opacity: 1,
+            "-webkit-transform": "translate3d(0,0,0)",
+            transform: "translate3d(0,0,0)",
+          },
+        },
       },
       animation: {
-        down: "fadeDown 1s ease-in-out",
+        down: "bounceDown 1s ease-in-out",
         left: "fadeLeft 1s ease-in-out",
         right: "fadeRight 1s ease-in-out",
         up: "fadeUp 1s ease-in-out",
+        down2: "fadeDown 1s ease-in-out",
       },
     },
   },

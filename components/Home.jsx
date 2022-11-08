@@ -6,8 +6,24 @@ import {
   ArrowDownIcon,
   ArrowRightIcon,
 } from "@radix-ui/react-icons";
+import useInView from "../hooks/useInView";
 
 export default function Home() {
+  const [containerRef, isVisible] = useInView({
+    root: null,
+    rootMargin: "0px",
+    threshold: 1.0,
+  });
+  const [containerRef2, isVisible2] = useInView({
+    root: null,
+    rootMargin: "0px",
+    threshold: 1.0,
+  });
+  const [containerRef3, isVisible3] = useInView({
+    root: null,
+    rootMargin: "0px",
+    threshold: 1.0,
+  });
   return (
     <>
       <Navbar />
@@ -28,14 +44,21 @@ export default function Home() {
         </div>
         <div className="sectionContent w-64 flex items-center m-4 mb-2 md:m-0" />
       </div>
-      <div className="bg-[#eef1ef] bg-[url('../public/speaker.jpg')] relative -z-10 bg-left bg-cover bg-no-repeat bg-fixed flex flex-col justify-center items-center md:h-[80vh] md:flex-row md:justify-around">
+      <div className="bg-[#eef1ef] bg-[url('../public/speaker.jpg')] relative -z-10 bg-left bg-cover bg-no-repeat bg-fixed flex flex-col justify-center items-center md:h-[80vh] md:flex-row md:justify-around isVisible">
         <div className="bg-[#EEF1EF] gradient-wrapper-right" />
         <div className="sectionContent w-64 flex items-center m-4 mt-2 md:m-0" />
-        <div className="sectionContent w-64 flex flex-col items-start m-4 mb-8 md:m-0">
-          <h1 className="text-3xl my-10 animate-left transform-gpu">
+        <div
+          className="sectionContent w-64 flex flex-col items-start m-4 mb-8 md:m-0"
+          ref={containerRef}
+        >
+          <h1
+            className={`text-3xl my-10 ${
+              isVisible ? "animate-left transform-gpu" : "hidden"
+            }`}
+          >
             Text Here
           </h1>
-          <p className="animate-up transform-gpu">
+          <p className={`${isVisible ? "animate-up transform-gpu" : "hidden"}`}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
             delectus voluptates soluta impedit atque magnam temporibus ut
             expedita eos maxime eius, aliquid eaque! Unde aperiam esse sed
@@ -47,9 +70,22 @@ export default function Home() {
       </div>
       <div className="bg-[#16161d] bg-[url('../public/bluewave.jpg')] relative -z-10 bg-cover bg-fixed flex flex-col justify-center items-center md:h-[80vh] md:flex-row md:justify-around">
         <div className="gradient-wrapper-left-2" />
-        <div className="sectionContent w-64 flex flex-col items-start m-4 mt-2 md:m-0">
-          <h1 className="text-white text-3xl my-10">Text Here</h1>
-          <p className="text-white">
+        <div
+          className="sectionContent w-64 flex flex-col items-start m-4 mt-2 md:m-0"
+          ref={containerRef2}
+        >
+          <h1
+            className={`text-white text-3xl my-10 ${
+              isVisible2 ? "animate-down2 transform-gpu" : "hidden"
+            }`}
+          >
+            Text Here
+          </h1>
+          <p
+            className={`text-white ${
+              isVisible2 ? "animate-up transform-gpu" : "hidden"
+            }`}
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
             tenetur natus, explicabo saepe, ratione quisquam nostrum similique
             perferendis reiciendis aspernatur architecto non dolorem molestias
@@ -63,9 +99,22 @@ export default function Home() {
       <div className="bg-[url('../public/f1.jpg')] relative -z-10 bg-left bg-contain bg-no-repeat bg-fixed flex flex-col justify-center items-center md:h-[80vh] md:flex-row md:justify-around">
         <div className="bg-[#EEF1EF] gradient-wrapper-right" />
         <div className="sectionContent w-64 flex items-center m-4 mt-2 md:m-0" />
-        <div className="sectionContent w-64 flex flex-col items-start m-4 mb-8 md:m-0">
-          <h1 className="text-3xl my-10">Text Here</h1>
-          <p>
+        <div
+          className="sectionContent w-64 flex flex-col items-start m-4 mb-8 md:m-0"
+          ref={containerRef3}
+        >
+          <h1
+            className={`text-3xl my-10 ${
+              isVisible3 ? "animate-down2 transform-gpu" : "hidden"
+            }`}
+          >
+            Text Here
+          </h1>
+          <p
+            className={`${
+              isVisible3 ? "animate-left transform-gpu" : "hidden"
+            }`}
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
             delectus voluptates soluta impedit atque magnam temporibus ut
             expedita eos maxime eius, aliquid eaque! Unde aperiam esse sed
