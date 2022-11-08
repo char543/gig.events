@@ -32,8 +32,10 @@ export default function Home() {
         <div className="bg-[#EEF1EF] gradient-wrapper-right" />
         <div className="sectionContent w-64 flex items-center m-4 mt-2 md:m-0" />
         <div className="sectionContent w-64 flex flex-col items-start m-4 mb-8 md:m-0">
-          <h1 className="text-3xl my-10">Text Here</h1>
-          <p>
+          <h1 className="text-3xl my-10 animate-left transform-gpu">
+            Text Here
+          </h1>
+          <p className="animate-up transform-gpu">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
             delectus voluptates soluta impedit atque magnam temporibus ut
             expedita eos maxime eius, aliquid eaque! Unde aperiam esse sed

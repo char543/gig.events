@@ -55,15 +55,30 @@ module.exports = {
             transform: "translate3d(0,0,0)",
           },
         },
-
         fadeLeft: {
-          "0%": {
-            transform: "translate3d(-5vw, 0, 0)",
-            opacity: "0.3",
+          from: {
+            opacity: 0,
+            "-webkit-transform": "translate3d(-100%,0,0)",
+            transform: "translate3d(-100%,0,0)",
           },
-          "100%": {
-            transform: "translate3d(0vw, 0, 0)",
-            opacity: "1",
+
+          to: {
+            opacity: 1,
+            "-webkit-transform": "translate3d(0,0,0)",
+            transform: "translate3d(0,0,0)",
+          },
+        },
+        fadeUp: {
+          from: {
+            opacity: 0,
+            "-webkit-transform": "translate3d(0,100%,0)",
+            transform: "translate3d(0,100%,0)",
+          },
+
+          to: {
+            opacity: 1,
+            "-webkit-transform": "translate3d(0,0,0)",
+            transform: "translate3d(0,0,0)",
           },
         },
       },
@@ -71,6 +86,7 @@ module.exports = {
         down: "fadeDown 1s ease-in-out",
         left: "fadeLeft 1s ease-in-out",
         right: "fadeRight 1s ease-in-out",
+        up: "fadeUp 1s ease-in-out",
       },
     },
   },
