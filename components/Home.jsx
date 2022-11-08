@@ -75,7 +75,7 @@ export default function Home() {
       </div>
 
       <div
-        className="relative -z-10 bg-[url('../public/stasys.jpg')] bg-no-repeat flex flex-col justify-center items-center md:h-[70vh] md:flex-row md:justify-around"
+        className="relative -z-10 bg-[url('../public/stasys.jpg')] bg-no-repeat flex flex-col justify-center items-center h-[500px] md:h-[70vh] md:flex-row md:justify-around"
         style={{ backgroundPosition: "40vw" }}
       >
         <div className="bg-[#16161d] gradient-wrapper-left-3" />

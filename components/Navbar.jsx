@@ -11,7 +11,9 @@ export const Navbar = () => {
 
   const handleClick = () => {
     setActive(!active);
-    document.body.style.overflow = "hidden";
+    active
+      ? (document.body.style.overflow = "")
+      : (document.body.style.overflow = "hidden");
   };
 
   return (
