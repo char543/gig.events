@@ -64,16 +64,12 @@ export default function Home() {
         >
           <h1
             className={`text-3xl my-10 ${
-              isVisible ? "animate-left transform-gpu forwards" : "hidden"
+              isVisible ? "animate-left transform-gpu" : "hidden"
             }`}
           >
             Text Here
           </h1>
-          <p
-            className={`${
-              isVisible ? "animate-up transform-gpu forwards" : "hidden"
-            }`}
-          >
+          <p className={`${isVisible ? "animate-up transform-gpu" : "hidden"}`}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
             delectus voluptates soluta impedit atque magnam temporibus ut
             expedita eos maxime eius, aliquid eaque! Unde aperiam esse sed
