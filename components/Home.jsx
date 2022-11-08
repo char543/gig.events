@@ -9,20 +9,31 @@ import {
 import useInView from "../hooks/useInView";
 
 export default function Home() {
+  // calls to useInView hook
   const [containerRef, isVisible] = useInView({
     root: null,
     rootMargin: "0px",
-    threshold: 1.0,
+    threshold: 0.75,
   });
   const [containerRef2, isVisible2] = useInView({
     root: null,
     rootMargin: "0px",
-    threshold: 1.0,
+    threshold: 0.75,
   });
   const [containerRef3, isVisible3] = useInView({
     root: null,
     rootMargin: "0px",
-    threshold: 1.0,
+    threshold: 0.75,
+  });
+  const [containerRef4, isVisible4] = useInView({
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.75,
+  });
+  const [containerRef5, isVisible5] = useInView({
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.6,
   });
   return (
     <>
@@ -44,7 +55,7 @@ export default function Home() {
         </div>
         <div className="sectionContent w-64 flex items-center m-4 mb-2 md:m-0" />
       </div>
-      <div className="bg-[#eef1ef] bg-[url('../public/speaker.jpg')] relative -z-10 bg-left bg-cover bg-no-repeat bg-fixed flex flex-col justify-center items-center md:h-[80vh] md:flex-row md:justify-around isVisible">
+      <div className="bg-[#eef1ef] bg-[url('../public/speaker.jpg')] relative -z-10 bg-left bg-cover bg-no-repeat bg-fixed flex flex-col justify-center items-center md:h-[80vh] md:flex-row md:justify-around">
         <div className="bg-[#EEF1EF] gradient-wrapper-right" />
         <div className="sectionContent w-64 flex items-center m-4 mt-2 md:m-0" />
         <div
@@ -53,12 +64,16 @@ export default function Home() {
         >
           <h1
             className={`text-3xl my-10 ${
-              isVisible ? "animate-left transform-gpu" : "hidden"
+              isVisible ? "animate-left transform-gpu forwards" : "hidden"
             }`}
           >
             Text Here
           </h1>
-          <p className={`${isVisible ? "animate-up transform-gpu" : "hidden"}`}>
+          <p
+            className={`${
+              isVisible ? "animate-up transform-gpu forwards" : "hidden"
+            }`}
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
             delectus voluptates soluta impedit atque magnam temporibus ut
             expedita eos maxime eius, aliquid eaque! Unde aperiam esse sed
@@ -126,37 +141,35 @@ export default function Home() {
       </div>
 
       <div
-        className="relative -z-10 bg-[url('../public/stasys.jpg')] bg-no-repeat flex flex-col justify-center items-center h-[500px] md:h-[70vh] md:flex-row md:justify-around"
+        className="bg-[#16161d] bg-[url('../public/stasys.jpg')] relative -z-10 bg-cover bg-fixed flex flex-col justify-center items-center h-[700px] md:h-[80vh] md:flex-row md:justify-around"
         style={{ backgroundPosition: "40vw" }}
       >
         <div className="bg-[#16161d] gradient-wrapper-left-3" />
-        {/* <div className="sectionContent w-64 flex items-center m-4 mb-2 md:m-0 z-10">
-          <Image
-            src="/club3.jpg"
-            alt="club3"
-            width="250px"
-            height="250px"
-            className="rounded-md"
-          />
+        <div
+          className="sectionContent w-64 flex flex-col items-start m-4 mt-2 md:m-0"
+          ref={containerRef4}
+        >
+          <h1
+            className={`text-white z-10 text-3xl my-10 ${
+              isVisible4 ? "animate-up transform-gpu duration-500" : "hidden"
+            }`}
+          >
+            Text Here
+          </h1>
+          <p
+            className={`z-10 text-white ${
+              isVisible4 ? "animate-right transform-gpu duration-500" : "hidden"
+            }`}
+          >
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum
+            necessitatibus perferendis ea modi! Tempore, voluptatum voluptate
+            laborum sequi delectus expedita hic aliquid, dolorum amet nihil
+            totam, est nemo architecto ullam doloribus a adipisci. Minus dolorem
+            ratione soluta delectus accusamus, neque quidem, repudiandae
+            quaerat, repellat magnam dolores quae incidunt inventore id?
+          </p>
         </div>
-        <div className="sectionContent w-64 flex items-center mx-4 my-2 md:m-0 z-10">
-          <Image
-            src="https://source.unsplash.com/random"
-            alt="random"
-            width="250px"
-            height="250px"
-            className="rounded-md"
-          />
-        </div>
-        <div className="sectionContent w-64 flex items-center m-4 mt-2 md:m-0 z-10">
-          <Image
-            src="https://source.unsplash.com/random"
-            alt="random"
-            width="250px"
-            height="250px"
-            className="rounded-md"
-          />
-        </div> */}
+        <div className="sectionContent w-64 flex items-center m-4 mt-2 md:m-0" />
       </div>
       <div
         className="bg-[url('../public/1210.jpg')] relative bg-left-top bg-cover -z-10 bg-no-repeat flex flex-col justify-center items-center md:h-[50vh] md:justify-center"
@@ -165,9 +178,22 @@ export default function Home() {
           backgroundPosition: "-45vw",
         }}
       >
-        <div className="absolute bg-[#EEF1EF] gradient-wrapper-right-2" />
-        <h1 className="text-3xl my-10">Title Here</h1>
-        <p className="flex items-center max-w-2xl m-16 md:m-0">
+        <div
+          className="absolute bg-[#EEF1EF] gradient-wrapper-right-2"
+          ref={containerRef5}
+        />
+        <h1
+          className={`text-3xl my-10 ${
+            isVisible5 ? "animate-up transform-gpu" : "hidden"
+          }`}
+        >
+          Title Here
+        </h1>
+        <p
+          className={`flex items-center max-w-2xl m-16 md:m-0 ${
+            isVisible5 ? "animate-down2 transform-gpu" : "hidden"
+          }`}
+        >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
           deleniti ea. Sed, minima nisi blanditiis doloribus consequuntur nulla.
           Inventore aperiam tempore recusandae ducimus quis voluptas deserunt
@@ -200,7 +226,3 @@ export default function Home() {
     </>
   );
 }
-
-//background-position:50vw
-//background-size:contain
-//background-attachment:fixed
