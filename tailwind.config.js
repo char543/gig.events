@@ -13,7 +13,7 @@ module.exports = {
 						opacity: "0",
 					},
 					"50%": {
-						transform: "translate3d(0, 2vh, 0)",
+						transform: "translate3d(0, 1vh, 0)",
 					},
 					"100%": {
 						transform: "translate3d(0, 0vh, 0)",
