@@ -57,13 +57,13 @@ export const Navbar = () => {
             <Link href="/">
               <a className="m-4">Home</a>
             </Link>
-            <Link href="/">
+            <Link href="/about">
               <a className="m-4">About</a>
             </Link>
-            <Link href="/">
+            <Link href="/services">
               <a className="m-4">Services</a>
             </Link>
-            <Link href="/">
+            <Link href="/contact">
               <a className="m-4">Contact</a>
             </Link>
           </div>

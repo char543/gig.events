@@ -41,7 +41,8 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="bg-[#16161d] bg-[url('../public/mixer-dark.jpg')] relative -z-10 bg-cover bg-fixed flex flex-col justify-center items-center md:h-[100vh] md:flex-row md:justify-around">
+      <div className="absolute h-full w-full pointer-events-none z-100 mix-blend-overlay bg-[url('../public/noice.avif')]" />
+      <div className="bg-[#16161d] bg-[url('../public/mixer-dark-2.avif')] relative -z-10 bg-cover bg-fixed flex flex-col justify-center items-center md:h-[100vh] md:flex-row md:justify-around">
         <div className="gradient-wrapper-left" />
         <div className="sectionContent w-64 flex flex-col items-start m-4 mt-2 md:m-0">
           <h1 className="text-white text-3xl my-10 animate-down transform-gpu">
@@ -58,7 +59,7 @@ export default function Home() {
         </div>
         <div className="sectionContent w-64 flex items-center m-4 mb-2 md:m-0" />
       </div>
-      <div className="bg-[#eef1ef] bg-[url('../public/speaker.jpg')] relative -z-10 bg-left bg-cover bg-no-repeat bg-fixed flex flex-col justify-center items-center md:h-[80vh] md:flex-row md:justify-around">
+      <div className="bg-[#eef1ef] bg-[url('../public/speaker.avif')] relative -z-10 bg-left bg-cover bg-no-repeat bg-fixed flex flex-col justify-center items-center md:h-[80vh] md:flex-row md:justify-around">
         <div className="bg-[#EEF1EF] gradient-wrapper-right" />
         <div className="sectionContent w-64 flex items-center m-4 mt-2 md:m-0" />
         <div
@@ -82,8 +83,9 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="bg-[#16161d] bg-[url('../public/bluewave.jpg')] relative -z-10 bg-cover bg-fixed flex flex-col justify-center items-center md:h-[80vh] md:flex-row md:justify-around">
+      <div className="bg-[#16161d] bg-[url('../public/bluewave.avif')] relative -z-10 bg-cover bg-fixed flex flex-col justify-center items-center md:h-[80vh] md:flex-row md:justify-around">
         <div className="gradient-wrapper-left-2" />
+        <div className="absolute h-full w-full pointer-events-none z-100 mix-blend-overlay bg-[url('../public/noice.avif')]" />
         <div
           className="sectionContent w-64 flex flex-col items-start m-4 mt-2 md:m-0"
           ref={containerRef2}
@@ -110,7 +112,7 @@ export default function Home() {
         </div>
         <div className="sectionContent w-64 flex items-center m-4 mb-2 md:m-0" />
       </div>
-      <div className="bg-[url('../public/f1.jpg')] relative -z-10 bg-left bg-contain bg-no-repeat bg-fixed flex flex-col justify-center items-center md:h-[80vh] md:flex-row md:justify-around">
+      <div className="bg-[url('../public/f1.avif')] relative -z-10 bg-left bg-contain bg-no-repeat bg-fixed flex flex-col justify-center items-center md:h-[80vh] md:flex-row md:justify-around">
         <div className="bg-[#EEF1EF] gradient-wrapper-right" />
         <div className="sectionContent w-64 flex items-center m-4 mt-2 md:m-0" />
         <div
@@ -138,12 +140,12 @@ export default function Home() {
           </p>
         </div>
       </div>
-
       <div
-        className="bg-[#16161d] bg-[url('../public/stasys.jpg')] relative -z-10 bg-cover bg-fixed flex flex-col justify-center items-center h-[700px] md:h-[80vh] md:flex-row md:justify-around"
+        className="bg-[#16161d] bg-[url('../public/stasys.avif')] relative -z-10 bg-cover bg-fixed flex flex-col justify-center items-center h-[700px] md:h-[80vh] md:flex-row md:justify-around"
         style={{ backgroundPosition: "40vw" }}
       >
         <div className="bg-[#16161d] gradient-wrapper-left-3" />
+        <div className="absolute h-full w-full pointer-events-none z-[999] mix-blend-overlay bg-[url('../public/noice.avif')]" />
         <div
           className="sectionContent w-64 flex flex-col items-start m-4 mt-2 md:m-0"
           ref={containerRef4}
@@ -171,7 +173,7 @@ export default function Home() {
         <div className="sectionContent w-64 flex items-center m-4 mt-2 md:m-0" />
       </div>
       <div
-        className="bg-[url('../public/1210.jpg')] relative bg-left-top bg-cover -z-10 bg-no-repeat flex flex-col justify-center items-center md:h-[50vh] md:justify-center"
+        className="bg-[url('../public/1210.avif')] relative bg-left-top bg-cover -z-10 bg-no-repeat flex flex-col justify-center items-center md:h-[50vh] md:justify-center"
         style={{
           // backgroundSize: "50% 100%",
           backgroundPosition: "-45vw",
@@ -222,8 +224,9 @@ export default function Home() {
         />
         <ArrowRightIcon className="m-2 w-10 h-10 hover:scale-110 duration-200" />
       </div>
-      <footer className="relative flex flex-col justify-center items-center text-white text-xl h-[40vh] bg-bottom bg-cover bg-no-repeat bg-[url('../public/scanner.jpg')] md:bg-center">
+      <footer className="relative flex flex-col justify-center items-center text-white text-xl h-[40vh] bg-bottom bg-cover bg-no-repeat bg-[url('../public/scanner.avif')] md:bg-center">
         <div className="absolute w-full h-full bg-[#16161d] opacity-80" />
+        <div className="absolute h-full w-full pointer-events-none z-100 mix-blend-overlay bg-[url('../public/noice.avif')]" />
         <p className="z-10">footer footer footer footer</p>
         <div className="flex mt-12 z-10">
           <ArrowLeftIcon className="m-2" />
