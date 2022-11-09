@@ -1,12 +1,10 @@
 import Image from "next/image";
 import { Navbar } from "./Navbar";
+import Footer from "./Footer";
 import {
   LinkedInLogoIcon,
   InstagramLogoIcon,
   TwitterLogoIcon,
-  ArrowLeftIcon,
-  ArrowUpIcon,
-  ArrowDownIcon,
   ArrowRightIcon,
 } from "@radix-ui/react-icons";
 import useInView from "../hooks/useInView";
@@ -224,17 +222,7 @@ export default function Home() {
         />
         <ArrowRightIcon className="m-2 w-10 h-10 hover:scale-110 duration-200" />
       </div>
-      <footer className="relative flex flex-col justify-center items-center text-white text-xl h-[40vh] bg-bottom bg-cover bg-no-repeat bg-[url('../public/scanner.avif')] md:bg-center">
-        <div className="absolute w-full h-full bg-[#16161d] opacity-80" />
-        <div className="absolute h-full w-full pointer-events-none z-100 mix-blend-overlay bg-[url('../public/noice.avif')]" />
-        <p className="z-10">footer footer footer footer</p>
-        <div className="flex mt-12 z-10">
-          <ArrowLeftIcon className="m-2" />
-          <ArrowUpIcon className="m-2" />
-          <ArrowDownIcon className="m-2" />
-          <ArrowRightIcon className="m-2" />
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }

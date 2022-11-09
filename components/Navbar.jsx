@@ -68,11 +68,6 @@ export const Navbar = () => {
             </Link>
           </div>
         </div>
-        <div className="text-white hidden md:flex flex-row mr-10">
-          <LinkedInLogoIcon className="m-2 w-5 h-5" />
-          <InstagramLogoIcon className="m-2 w-5 h-5" />
-          <TwitterLogoIcon className="m-2 w-5 h-5" />
-        </div>
       </nav>
     </>
   );

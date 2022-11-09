@@ -3,7 +3,9 @@ export default function AboutSections() {
     <>
       <div className="bg-[#16161d] h-screen w-screen">
         <div className="absolute h-screen w-screen pointer-events-none z-100 mix-blend-overlay bg-[url('../public/noice.avif')]" />
-        <div className="edit"></div>
+        <div className="flex justify-center items-center h-screen w-screen">
+          <div className="edit text-white text-3xl font-bold">about page</div>
+        </div>
       </div>
     </>
   );
