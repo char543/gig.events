@@ -1,6 +1,9 @@
 import Image from "next/image";
 import { Navbar } from "./Navbar";
 import {
+  LinkedInLogoIcon,
+  InstagramLogoIcon,
+  TwitterLogoIcon,
   ArrowLeftIcon,
   ArrowUpIcon,
   ArrowDownIcon,
@@ -204,10 +207,20 @@ export default function Home() {
         </p>
       </div>
       <div className="bg-[#EEF1EF] h-[30vh] flex flex-row justify-around items-center">
-        <ArrowLeftIcon className="m-2 w-10 h-10" />
-        <ArrowUpIcon className="m-2 w-10 h-10" />
-        <ArrowDownIcon className="m-2 w-10 h-10" />
-        <ArrowRightIcon className="m-2 w-10 h-10" />
+        <div style={{ color: "#0967C3" }}>
+          <LinkedInLogoIcon className="m-2 w-10 h-10 hover:scale-110 duration-200" />
+        </div>
+        <img
+          src="insta.svg"
+          alt=""
+          className="h-10 w-10 hover:scale-110 duration-200"
+        />
+        <img
+          src="twitter.svg"
+          alt=""
+          className="h-10 w-10 hover:scale-110 duration-200"
+        />
+        <ArrowRightIcon className="m-2 w-10 h-10 hover:scale-110 duration-200" />
       </div>
       <footer className="relative flex flex-col justify-center items-center text-white text-xl h-[40vh] bg-bottom bg-cover bg-no-repeat bg-[url('../public/scanner.jpg')] md:bg-center">
         <div className="absolute w-full h-full bg-[#16161d] opacity-80" />

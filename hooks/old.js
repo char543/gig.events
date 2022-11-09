@@ -4,14 +4,14 @@ const useInView = (options) => {
   const containerRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
+  const callbackFunction = (entries) => {
+    const [entry] = entries;
+    setIsVisible(entry.isIntersecting);
+  };
+
   useEffect(() => {
-    const observer = new IntersectionObserver((entries, observer) => {
-      const [entry] = entries;
-      setIsVisible(entry.isIntersecting);
-      if (entry.isIntersecting) observer.unobserve(containerRef.current);
-    }, options);
-    if (containerRef.current && !isVisible)
-      observer.observe(containerRef.current);
+    const observer = new IntersectionObserver(callbackFunction, options);
+    if (containerRef.current) observer.observe(containerRef.current);
 
     return () => {
       if (containerRef.current) observer.unobserve(containerRef.current);
