@@ -7,60 +7,73 @@
 } */
 
 * {
-	font-family: "Inter";
-	font-weight: bold;
+  font-family: "Inter";
+  font-weight: bold;
+}
+
+.gradient-color {
+  background: radial-gradient(circle 800px at 700px 200px, #221527, #0000),
+    radial-gradient(circle 600px at calc(100% - 300px) 300px, #04312c, #0000),
+    radial-gradient(circle 800px at right center, #082636, #0000),
+    radial-gradient(circle 800px at right bottom, #0c1820, #0000),
+    radial-gradient(
+      circle 800px at calc(50% - 600px) calc(100% - 100px),
+      #3a182f,
+      #1f121b,
+      #0000
+    );
 }
 
 ::selection {
-	color: violet;
+  color: rgb(139 92 246);
 }
 
 .gradient-wrapper-left {
-	background: linear-gradient(90deg, #16161d 0%, rgba(0, 0, 0, 0) 100%);
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	z-index: -100;
+  background: linear-gradient(90deg, #16161d 0%, rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -100;
 }
 
 .gradient-wrapper-left-2 {
-	background: linear-gradient(90deg, #16161d 20%, rgba(0, 0, 0, 0) 100%);
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	z-index: -100;
+  background: linear-gradient(90deg, #16161d 20%, rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -100;
 }
 
 .gradient-wrapper-left-3 {
-	background: linear-gradient(90deg, #16161d 55%, rgba(0, 0, 0, 0) 100%);
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	z-index: 10;
+  background: linear-gradient(90deg, #16161d 55%, rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
 }
 
 .gradient-wrapper-right {
-	background: linear-gradient(270deg, #eef1ef 20%, rgba(0, 0, 0, 0) 100%);
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	z-index: -100;
+  background: linear-gradient(270deg, #eef1ef 20%, rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -100;
 }
 
 .gradient-wrapper-right-2 {
-	background: linear-gradient(270deg, #eef1ef 55%, rgba(0, 0, 0, 0) 100%);
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	z-index: -100;
+  background: linear-gradient(270deg, #eef1ef 55%, rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -100;
 }

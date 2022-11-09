@@ -48,7 +48,7 @@ export const Navbar = () => {
         >
           {/* end ternary div */}
 
-          <div className="text-black z-20 md:text-white flex flex-col absolute m-0 w-64 right-0 top-[40px] md:flex md:flex-row md:mr-24 md:justify-end md:static md:m-auto md:w-full md:h-full h-screen bg-slate-300 rounded-2xl md:bg-transparent">
+          <div className="text-black z-20 md:text-white flex flex-col absolute m-0 w-64 right-0 top-[40px] md:flex md:flex-row md:mr-12 md:justify-end md:static md:m-auto md:w-full md:h-full h-screen bg-slate-300 rounded-2xl md:bg-transparent">
             <Link href="/">
               <a className="m-4">Home</a>
             </Link>
