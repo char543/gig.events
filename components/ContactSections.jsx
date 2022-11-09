@@ -8,7 +8,7 @@ export default function AboutSections() {
   return (
     <>
       <div className="bg-[#16161d] h-screen w-screen flex flex-col justify-center items-center">
-        <div className="absolute h-screen w-screen pointer-events-none z-100 mix-blend-overlay bg-[url('../public/noice.avif')]" />
+        <div className="absolute h-screen w-screen pointer-events-none z-100 mix-blend-overlay bg-[url('../public/noice.avif')] opacity-60" />
         <div className="text m-12 flex justify-center items-center flex-col">
           <h1 className="text-white text-5xl font-bold text-center">
             Get in touch
