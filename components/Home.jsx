@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Navbar } from "./Navbar";
 import Footer from "./Footer";
+import "@fontsource/inter";
 import {
   LinkedInLogoIcon,
   InstagramLogoIcon,
@@ -139,7 +140,7 @@ export default function Home() {
         </div>
       </div>
       <div
-        className="bg-[#16161d] bg-[url('../public/stasys.avif')] relative -z-10 bg-cover bg-fixed flex flex-col justify-center items-center h-[700px] md:h-[80vh] md:flex-row md:justify-around"
+        className="bg-[url('../public/stasys.avif')] bg-no-repeat relative -z-10 bg-cover bg-fixed flex flex-col justify-center items-center h-[700px] md:h-[80vh] md:flex-row md:justify-around"
         style={{ backgroundPosition: "40vw" }}
       >
         <div className="bg-[#16161d] gradient-wrapper-left-3" />
@@ -207,7 +208,7 @@ export default function Home() {
         </p>
       </div>
       <div className="bg-[#EEF1EF] h-[30vh] flex flex-row justify-around items-center">
-        <div style={{ color: "#0967C3" }}>
+        <div className="text-[#0967C3]">
           <LinkedInLogoIcon className="m-2 w-10 h-10 hover:scale-110 duration-200" />
         </div>
         <img

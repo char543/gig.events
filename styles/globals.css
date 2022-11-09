@@ -4,8 +4,12 @@
 
 /* body {
 	background-color: #16161d;
-	font-family: Inter;
 } */
+
+* {
+	font-family: "Inter";
+	font-weight: bold;
+}
 
 ::selection {
 	color: violet;
